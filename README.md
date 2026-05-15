@@ -8,7 +8,7 @@
 
 ## About
 
-BookNest is a web application that helps readers discover books they'll love. Users create a profile based on their reading preferences, and the platform uses a hybrid recommendation algorithm — combining content-based and collaborative filtering — to suggest books tailored to each user. Originally built as a school group project using React and the Google Books API.
+BookNest is a web application that helps readers discover books they'll love. Users create a profile based on their reading preferences, and the platform uses a hybrid recommendation algorithm; combining content-based and collaborative filtering to suggest books tailored to each user. Originally built as a school group project using React and the Google Books API.
 
 ---
 

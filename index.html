@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BookNest - Discover Your Next Favorite Book</title>
+    <meta name="description" content="BookNest uses collaborative filtering to recommend books you'll love based on your reading preferences">
+    <meta name="keywords" content="book recommendations, collaborative filtering, reading, books, BookNest">
+    
+    <meta property="og:title" content="BookNest - Discover Your Next Favorite Book">
+    <meta property="og:description" content="BookNest uses collaborative filtering to recommend books you'll love based on your reading preferences">
+    
+    <meta name="twitter:title" content="BookNest - Discover Your Next Favorite Book">
+    <meta name="twitter:description" content="BookNest uses collaborative filtering to recommend books you'll love based on your reading preferences">
+
+    <link rel="icon" type="image/jpeg" href="https://app.trickle.so/storage/public/images/usr_17a06c0760000001/cbf11076-a7bf-46d1-81b6-3c49f4088ee8.jpeg">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #8B4513;
+            --secondary-color: #F5DEB3;
+            --accent-color: #D2691E;
+            --text-dark: #2C1810;
+            --text-light: #6B4423;
+        }
+    }
+
+    @layer base {
+        body {
+            @apply bg-gray-50 text-[var(--text-dark)] font-sans;
+        }
+        
+        h1 {
+            @apply text-4xl font-bold text-[var(--text-dark)];
+        }
+        
+        h2 {
+            @apply text-3xl font-semibold text-[var(--text-dark)];
+        }
+        
+        h3 {
+            @apply text-2xl font-semibold text-[var(--text-dark)];
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply bg-[var(--primary-color)] text-white px-6 py-3 rounded-lg font-medium hover:bg-[var(--accent-color)] transition-colors duration-200;
+        }
+        
+        .btn-secondary {
+            @apply bg-[var(--secondary-color)] text-[var(--text-dark)] px-6 py-3 rounded-lg font-medium hover:bg-[var(--accent-color)] hover:text-white transition-colors duration-200;
+        }
+        
+        .card {
+            @apply bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-200;
+        }
+    }
+
+    @layer utilities {
+        .sidebar-transition {
+            @apply transition-transform duration-300 ease-in-out;
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel" src="utils/auth.js"></script>
+    <script type="text/babel" src="utils/bookService.js"></script>
+    <script type="text/babel" src="utils/googleBooksAPI.js"></script>
+    <script type="text/babel" src="utils/recommendationEngine.js"></script>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Sidebar.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/BookCard.js"></script>
+    <script type="text/babel" src="components/BookDetail.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>

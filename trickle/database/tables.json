@@ -1,0 +1,208 @@
+[
+  {
+    "name": "user",
+    "fields": [
+      {
+        "name": "Email",
+        "type": "text",
+        "description": "User email address",
+        "options": null
+      },
+      {
+        "name": "Password",
+        "type": "text",
+        "description": "User password",
+        "options": null
+      },
+      {
+        "name": "FavoriteBook",
+        "type": "text",
+        "description": "User's favorite book",
+        "options": null
+      },
+      {
+        "name": "FavoriteAuthor",
+        "type": "text",
+        "description": "User's favorite author",
+        "options": null
+      },
+      {
+        "name": "LastBookRead",
+        "type": "text",
+        "description": "Last book user read",
+        "options": null
+      },
+      {
+        "name": "FavoriteGenre",
+        "type": "text",
+        "description": "User's favorite genre",
+        "options": null
+      }
+    ]
+  },
+  {
+    "name": "bookmark",
+    "fields": [
+      {
+        "name": "UserId",
+        "type": "text",
+        "description": "ID of user who bookmarked",
+        "options": null
+      },
+      {
+        "name": "BookId",
+        "type": "number",
+        "description": "ID of bookmarked book",
+        "options": null
+      },
+      {
+        "name": "BookTitle",
+        "type": "text",
+        "description": "Title of bookmarked book",
+        "options": null
+      },
+      {
+        "name": "BookAuthor",
+        "type": "text",
+        "description": "Author of bookmarked book",
+        "options": null
+      },
+      {
+        "name": "BookCover",
+        "type": "text",
+        "description": "Cover image URL",
+        "options": null
+      },
+      {
+        "name": "BookRating",
+        "type": "number",
+        "description": "Book rating",
+        "options": null
+      }
+    ]
+  },
+  {
+    "name": "history",
+    "fields": [
+      {
+        "name": "UserId",
+        "type": "text",
+        "description": "ID of user",
+        "options": null
+      },
+      {
+        "name": "BookId",
+        "type": "number",
+        "description": "ID of viewed book",
+        "options": null
+      },
+      {
+        "name": "BookTitle",
+        "type": "text",
+        "description": "Title of viewed book",
+        "options": null
+      },
+      {
+        "name": "BookAuthor",
+        "type": "text",
+        "description": "Author of viewed book",
+        "options": null
+      },
+      {
+        "name": "BookCover",
+        "type": "text",
+        "description": "Cover image URL",
+        "options": null
+      }
+    ]
+  },
+  {
+    "name": "rating",
+    "fields": [
+      {
+        "name": "UserId",
+        "type": "text",
+        "description": "ID of user who rated",
+        "options": null
+      },
+      {
+        "name": "BookId",
+        "type": "number",
+        "description": "ID of rated book",
+        "options": null
+      },
+      {
+        "name": "Rating",
+        "type": "number",
+        "description": "User's rating (1-5)",
+        "options": null
+      }
+    ]
+  },
+  {
+    "name": "book",
+    "fields": [
+      {
+        "name": "Title",
+        "type": "text",
+        "description": "Book title",
+        "options": null
+      },
+      {
+        "name": "Author",
+        "type": "text",
+        "description": "Book author",
+        "options": null
+      },
+      {
+        "name": "ISBN",
+        "type": "text",
+        "description": "ISBN number",
+        "options": null
+      },
+      {
+        "name": "Year",
+        "type": "number",
+        "description": "Publication year",
+        "options": null
+      },
+      {
+        "name": "Rating",
+        "type": "number",
+        "description": "Average rating",
+        "options": null
+      },
+      {
+        "name": "Cover",
+        "type": "text",
+        "description": "Cover image URL",
+        "options": null
+      },
+      {
+        "name": "Summary",
+        "type": "text",
+        "description": "Book summary",
+        "options": null
+      },
+      {
+        "name": "Genres",
+        "type": "array",
+        "description": "Book genres",
+        "options": [
+          "fiction",
+          "non-fiction",
+          "mystery",
+          "romance",
+          "sci-fi",
+          "fantasy",
+          "biography",
+          "history",
+          "classic",
+          "thriller",
+          "horror",
+          "adventure"
+        ]
+      }
+    ]
+  }
+]
